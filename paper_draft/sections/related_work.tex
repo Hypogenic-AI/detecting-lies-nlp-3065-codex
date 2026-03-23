@@ -1,0 +1,13 @@
+\section{Related Work}
+\label{sec:related_work}
+\para{Truthfulness and hallucination benchmarks.}
+Truthfulness research has established robust factual QA benchmarks and honesty-oriented training settings \citep{lin2022truthfulqa,yang2023honesty}. HaluEval extends hallucination-focused evaluation with structured alternatives \citep{li2023halueval}. These resources capture epistemic failures well, but they do not by themselves isolate incentive-driven misreporting.
+
+\para{Representation-level lie detection.}
+Several studies show that model internal states carry linearly decodable truthfulness signals \citep{azaria2023internal,burger2024truth,wang2025thinking}. This line is valuable because it moves beyond output strings. However, most evaluations focus on detection accuracy, not explicit mechanism attribution under controlled incentive shifts.
+
+\para{Behavioral deception under pressure.}
+Behavioral work reports that external pressure and utility conflicts can increase deceptive or misleading outputs \citep{openai2023pressure,sulidar2024,huang2025deceptionbench,lhdeception2025}. These benchmarks clarify that context and incentives matter. Still, many settings vary both task conditions and item content at once, which can obscure mechanism-level attribution.
+
+\para{Positioning of this work.}
+Unlike prior single-condition evaluations, we use a paired counterfactual protocol on identical items with only prompt incentives changed. Building on truthfulness and deception literature, we estimate mechanism shares among pressure-false outputs and test transfer of a baseline detector across dataset contexts. Our goal is not to claim latent intent access, but to provide a reproducible behavioral decomposition useful for safety evaluation.

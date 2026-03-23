@@ -1,0 +1,37 @@
+\section{Results}
+\label{sec:results}
+\subsection{Main Paired Effects}
+\input{tables/main_results_table}
+
+\Figref{fig:accuracy_condition} shows a consistent drop in factual accuracy under \pressure across both datasets. The pooled false-rate increase is +27.9 points (12.9\% to 40.8\%), with a strong paired effect (McNemar $p=7.43\times10^{-16}$). Dataset-specific effects are similar: +25.8 points on \halueval and +30.0 points on \truthfulqa.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/accuracy_by_condition.png}
+    \caption{Accuracy by condition and dataset. Pressure prompts reduce factual accuracy in both \halueval and \truthfulqa, indicating a robust directional shift rather than isolated item noise.}
+    \label{fig:accuracy_condition}
+\end{figure}
+
+\subsection{Mechanism Composition of Pressure-False Outputs}
+\input{tables/mechanism_detector_table}
+
+Among pressure-false outputs ($n=98$), 67 are incentive-induced and 31 are epistemic. \Figref{fig:mechanism_counts} visualizes this imbalance. The bootstrap 95\% CI for the incentive share is [0.5918, 0.7653], which remains well above 0.5. This supports the claim that in this protocol, pressure-condition falsehoods are mostly incentive-induced.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/mechanism_counts_pressure_false.png}
+    \caption{Mechanism counts among pressure-false outputs. Incentive-induced cases are the majority, consistent across both source datasets.}
+    \label{fig:mechanism_counts}
+\end{figure}
+
+\subsection{Transition Asymmetry and Detector Transfer}
+\Figref{fig:paired_transitions} highlights transition asymmetry: many control-correct $\rightarrow$ pressure-wrong flips and no reverse transitions in the full run. This asymmetry is consistent with directional incentive effects, not random perturbation.
+
+The detector baseline performs moderately in pooled random splitting (accuracy 0.7333, F1 0.8400, \auroc 0.6614) but degrades in cross-dataset transfer (\auroc 0.5747 and 0.6022). We interpret this as evidence that output-text cues for mechanism labels are not stable across contexts.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/paired_outcomes_by_dataset.png}
+    \caption{Paired outcome transitions by dataset. The dominant transition is control-correct to pressure-wrong, with no control-wrong to pressure-correct reversals in this run.}
+    \label{fig:paired_transitions}
+\end{figure}

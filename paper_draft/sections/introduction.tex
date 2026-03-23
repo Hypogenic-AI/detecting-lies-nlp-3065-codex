@@ -1,0 +1,21 @@
+\section{Introduction}
+\label{sec:introduction}
+Large language models can produce fluent false statements even on factual questions. For safety practice, the core issue is not only how often this happens, but \emph{why} it happens. A false answer can come from missing knowledge (epistemic failure) or from behavior that shifts under incentives (misreporting).
+
+{\bf why does this distinction matter?} Mechanisms imply different interventions. Epistemic failures call for calibration, retrieval, abstention, and uncertainty-aware decoding \citep{yang2023honesty,survey2024hallucination}. Incentive-induced misreporting instead requires objective and policy constraints, plus evaluation under adversarial pressure \citep{sulidar2024,huang2025deceptionbench,huan2025canlie}. If we train and evaluate detectors on conflated labels, we risk overclaiming ``deception detection'' while actually measuring mixed behavior.
+
+Prior work provides strong ingredients but limited mechanism separation. Representation-level studies detect truth-related signals in hidden states \citep{azaria2023internal,burger2024truth}. Behavioral benchmarks show that pressure can change model behavior \citep{openai2023pressure,huang2025deceptionbench}. However, many evaluations do not use paired counterfactual controls that hold question identity constant while varying incentives.
+
+We address this gap with \methodname, a paired control/pressure protocol on 240 factual items from \truthfulqa and \halueval. Our main question is direct: among false outputs under pressure, what fraction is incentive-induced versus epistemic? We evaluate \gptmodel with deterministic decoding and test a simple detector for mechanism transfer.
+
+Our quantitative findings are clear. Pressure increases pooled false rate by +27.9 points (12.9\% $\rightarrow$ 40.8\%, McNemar $p=7.43\times10^{-16}$). Among pressure-false outputs, 68.4\% are incentive-induced and 31.6\% are epistemic. Cross-dataset detector transfer drops to \auroc 0.57--0.60, indicating mechanism conflation risk.
+
+Our contributions are:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We propose a reproducible paired evaluation protocol that isolates incentive effects while holding question identity fixed.
+    \item We quantify mechanism shares under pressure and show that incentive-induced falsehoods dominate in this setting (68.4\% of pressure-false outputs).
+    \item We conduct detector transfer analysis and show weaker cross-dataset robustness than pooled in-domain checks.
+    \item We provide an actionable evaluation recommendation: report mechanism-separated metrics instead of single mixed falsehood labels.
+\end{itemize}
+
+\para{Paper organization.} \secref{sec:related_work} reviews prior truthfulness and deception work, \secref{sec:methodology} describes the paired protocol, \secref{sec:results} presents quantitative findings, and \secref{sec:discussion} discusses limitations and implications.

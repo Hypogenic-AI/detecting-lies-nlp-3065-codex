@@ -1,0 +1,7 @@
+\section{Conclusion}
+\label{sec:conclusion}
+We presented a mechanism-separated evaluation of LLM false outputs using paired control and pressure prompts on 240 factual QA items. The paired results show a large pressure effect (+27.9 false-rate points, McNemar $p=7.43\times10^{-16}$), and mechanism attribution shows that most pressure-false outputs are incentive-induced (68.4\%).
+
+The key takeaway is simple: lie-detection evaluation should not treat false output as a single class when incentives are present. Mechanism-aware metrics are necessary for valid safety claims.
+
+Next steps include multi-model replication (e.g., newer GPT and Claude families), pressure-strength dose-response studies, and comparison with representation-level detectors under the same paired protocol.

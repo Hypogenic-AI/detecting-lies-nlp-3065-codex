@@ -1,0 +1,30 @@
+{
+  "truthfulqa_mc": {
+    "rows": 817,
+    "missing_rate_by_col": {
+      "question": 0.0,
+      "mc1_targets": 0.0,
+      "mc2_targets": 0.0
+    },
+    "mean_num_choices": 5.035495716034272,
+    "min_num_choices": 2,
+    "max_num_choices": 13,
+    "correct_label_count_distribution": {
+      "1": 817
+    }
+  },
+  "halueval_qa": {
+    "rows": 10000,
+    "missing_rate_by_col": {
+      "knowledge": 0.0,
+      "question": 0.0,
+      "right_answer": 0.0,
+      "hallucinated_answer": 0.0
+    },
+    "question_len_mean": 106.4076,
+    "question_len_std": 60.53218711402786,
+    "right_answer_len_mean": 13.6538,
+    "hallucinated_answer_len_mean": 66.224,
+    "question_len_outliers_abs_z_gt_3": 258
+  }
+}

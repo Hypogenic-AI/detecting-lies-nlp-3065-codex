@@ -1,0 +1,39 @@
+{
+  "2023_alignment_for_honesty.pdf": [
+    "https://github.com/GAIR-NLP/alignment-for-honesty",
+    "https://github.com/InternLM/InternLM.",
+    "https://github.com/OpenLMLab/collie"
+  ],
+  "2024_ai_liedar_examine_the_trade_off_between_utility_and_truthfulness_in_ll.pdf": [
+    "https://github.com/sotopia-lab/sotopia"
+  ],
+  "2025_do_large_language_models_exhibit_spontaneous_rational_deception.pdf": [
+    "https://github.com/0xSMT/llm-2x2-games-deception"
+  ],
+  "2025_llms_deceive_unintentionally_emergent_misalignment_in_dishonesty_from_.pdf": [
+    "https://github.com/centerforaisafety/mask"
+  ],
+  "2025_advancing_the_scientific_method_with_large_language_models_from_hypoth.pdf": [
+    "https://github.com/jerryjliu/llama_index",
+    "https://github.com/langchain-ai/langchain",
+    "https://github.com/yoheinakajima/babyagi"
+  ],
+  "2023_hoodwinked_deception_and_cooperation_in_a_text_based_game_for_language.pdf": [
+    "https://github.com/aogara-ds/hoodwinked",
+    "https://github.com/aogara-ds/hoodwinked."
+  ],
+  "2024_truth_is_universal_robust_detection_of_lies_in_llms.pdf": [
+    "https://github.com/meta-llama/llama3"
+  ],
+  "2023_large_language_models_can_strategically_deceive_their_users_when_put_u.pdf": [
+    "https://github.com/Significant-Gravitas/AutoGPT",
+    "https://github.com/TransformerOptimus/SuperAGI",
+    "https://github.com/yoheinakajima/babyagi"
+  ],
+  "2025_lh_deception_simulating_and_understanding_llm_deceptive_behaviors_in_l.pdf": [
+    "https://github.com/deeplearning-wisc/LongHorizonDeception."
+  ],
+  "2025_deceptionbench_a_comprehensive_benchmark_for_ai_deception_behaviors_in.pdf": [
+    "https://github.com/Aries-iai/DeceptionBench."
+  ]
+}

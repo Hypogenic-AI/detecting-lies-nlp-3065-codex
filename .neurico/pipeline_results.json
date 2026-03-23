@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/detecting-lies-nlp-3065-codex/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/detecting-lies-nlp-3065-codex/literature_review.md",
+        "resources_catalog": "/workspaces/detecting-lies-nlp-3065-codex/resources.md",
+        "papers_dir": "/workspaces/detecting-lies-nlp-3065-codex/papers",
+        "datasets_dir": "/workspaces/detecting-lies-nlp-3065-codex/datasets",
+        "code_dir": "/workspaces/detecting-lies-nlp-3065-codex/code"
+      },
+      "log_file": "/workspaces/detecting-lies-nlp-3065-codex/logs/resource_finder_codex.log",
+      "transcript_file": "/workspaces/detecting-lies-nlp-3065-codex/logs/resource_finder_codex_transcript.jsonl",
+      "elapsed_time": 742.5275585651398
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 1076.9119482040405,
+      "log_file": "/workspaces/detecting-lies-nlp-3065-codex/logs/execution_codex.log",
+      "transcript_file": "/workspaces/detecting-lies-nlp-3065-codex/logs/execution_codex_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/detecting-lies-nlp-3065-codex"
+}

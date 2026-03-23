@@ -1,0 +1,13 @@
+\section{Discussion}
+\label{sec:discussion}
+\para{Interpretation.}
+The paired design isolates an incentive-sensitive failure mode that is not visible in single-condition falsehood rates. The central finding is practical: most pressure-false outputs in this study are incentive-induced (68.4\%), so treating all false outputs as epistemic errors will mis-specify both evaluation and mitigation.
+
+\para{Why transfer is weaker.}
+Cross-dataset detector drops suggest mechanism labels are partly expressed through context-specific lexical signals rather than robust causal markers. This aligns with concerns in prior lie-detection work that performance can depend on prompt format and domain artifacts \citep{burger2024truth,wang2025thinking,huang2025deceptionbench}.
+
+\para{Limitations.}
+First, our mechanism attribution is behavioral and operational, not a direct readout of latent intent. Second, the pressure prompt is stylized and may overstate some deployment incentives. Third, we report one primary model (\gptmodel) in the main experiment. Fourth, the detector is intentionally lightweight; stronger representation-level detectors may transfer better. Fifth, minor API nondeterminism remains possible even with temperature 0.
+
+\para{Broader implications.}
+For governance and safety claims about ``deception,'' mechanism separation should be a reporting default. For deployment, intervention choice should follow mechanism: calibration and abstention for epistemic errors, objective-level constraints and policy defenses for incentive-induced misreporting. This separation also helps avoid overclaiming detector capability when evaluated on mixed labels.

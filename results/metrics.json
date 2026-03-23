@@ -1,0 +1,135 @@
+{
+  "seed": 42,
+  "accuracy_by_dataset_condition": [
+    {
+      "dataset": "halueval_qa",
+      "condition": "control",
+      "accuracy": 0.875
+    },
+    {
+      "dataset": "halueval_qa",
+      "condition": "pressure",
+      "accuracy": 0.6166666666666667
+    },
+    {
+      "dataset": "truthfulqa_mc",
+      "condition": "control",
+      "accuracy": 0.8666666666666667
+    },
+    {
+      "dataset": "truthfulqa_mc",
+      "condition": "pressure",
+      "accuracy": 0.5666666666666667
+    }
+  ],
+  "paired_tests": [
+    {
+      "dataset": "halueval_qa",
+      "n_pairs": 120,
+      "control_true_pressure_true": 74,
+      "control_true_pressure_false": 31,
+      "control_false_pressure_true": 0,
+      "control_false_pressure_false": 15,
+      "control_false_rate": 0.125,
+      "pressure_false_rate": 0.38333333333333336,
+      "risk_difference": 0.25833333333333336,
+      "mcnemar_stat": 29.032258064516128,
+      "mcnemar_p": 7.118304164714049e-08,
+      "mcnemar_p_bh": 7.118304164714049e-08
+    },
+    {
+      "dataset": "truthfulqa_mc",
+      "n_pairs": 120,
+      "control_true_pressure_true": 68,
+      "control_true_pressure_false": 36,
+      "control_false_pressure_true": 0,
+      "control_false_pressure_false": 16,
+      "control_false_rate": 0.13333333333333333,
+      "pressure_false_rate": 0.43333333333333335,
+      "risk_difference": 0.30000000000000004,
+      "mcnemar_stat": 34.02777777777778,
+      "mcnemar_p": 5.433087474176234e-09,
+      "mcnemar_p_bh": 8.14963121126435e-09
+    },
+    {
+      "dataset": "ALL",
+      "n_pairs": 240,
+      "control_true_pressure_true": 142,
+      "control_true_pressure_false": 67,
+      "control_false_pressure_true": 0,
+      "control_false_pressure_false": 31,
+      "control_false_rate": 0.12916666666666668,
+      "pressure_false_rate": 0.4083333333333333,
+      "risk_difference": 0.2791666666666667,
+      "mcnemar_stat": 65.01492537313433,
+      "mcnemar_p": 7.433292054365067e-16,
+      "mcnemar_p_bh": 2.22998761630952e-15
+    }
+  ],
+  "mechanism_summary_pressure_false": {
+    "n_pressure_false": 98,
+    "counts": {
+      "incentive": 67,
+      "epistemic": 31
+    },
+    "proportions": {
+      "epistemic": 0.3163265306122449,
+      "incentive": 0.6836734693877551,
+      "ambiguous": 0.0
+    },
+    "bootstrap_ci_95": {
+      "epistemic": [
+        0.23469387755102042,
+        0.40816326530612246
+      ],
+      "incentive": [
+        0.5918367346938775,
+        0.7653061224489796
+      ],
+      "ambiguous": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "sample_sizes": {
+    "n_rows": 480,
+    "n_items": 240,
+    "n_pairs": 240
+  },
+  "detector_transfer": {
+    "n_examples": 98,
+    "by_split": [
+      {
+        "split": "pooled_random_70_30",
+        "n_train": 68,
+        "n_test": 30,
+        "accuracy": 0.7333333333333333,
+        "precision": 0.7241379310344828,
+        "recall": 1.0,
+        "f1": 0.84,
+        "auroc": 0.6613756613756614
+      },
+      {
+        "split": "train_halueval_qa_test_truthfulqa_mc",
+        "n_train": 46,
+        "n_test": 52,
+        "accuracy": 0.6923076923076923,
+        "precision": 0.7083333333333334,
+        "recall": 0.9444444444444444,
+        "f1": 0.8095238095238095,
+        "auroc": 0.5746527777777778
+      },
+      {
+        "split": "train_truthfulqa_mc_test_halueval_qa",
+        "n_train": 52,
+        "n_test": 46,
+        "accuracy": 0.6521739130434783,
+        "precision": 0.6829268292682927,
+        "recall": 0.9032258064516129,
+        "f1": 0.7777777777777778,
+        "auroc": 0.6021505376344086
+      }
+    ]
+  }
+}

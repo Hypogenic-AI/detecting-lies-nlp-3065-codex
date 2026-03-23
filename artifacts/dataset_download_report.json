@@ -1,0 +1,118 @@
+[
+  {
+    "dataset": "truthfulqa/truthful_qa",
+    "out": "datasets/truthful_qa",
+    "status": "error",
+    "rows": {},
+    "error": "Config name is missing.\nPlease pick one among the available configs: ['generation', 'multiple_choice']\nExample of usage:\n\t`load_dataset('truthfulqa/truthful_qa', 'generation')`"
+  },
+  {
+    "dataset": "pminervini/HaluEval",
+    "out": "datasets/halueval",
+    "status": "error",
+    "rows": {},
+    "error": "Config name is missing.\nPlease pick one among the available configs: ['dialogue', 'dialogue_samples', 'general', 'qa', 'qa_samples', 'summarization', 'summarization_samples']\nExample of usage:\n\t`load_dataset('pminervini/HaluEval', 'dialogue')`"
+  },
+  {
+    "dataset": "EleutherAI/sycophancy",
+    "out": "datasets/sycophancy",
+    "status": "error",
+    "rows": {},
+    "error": "Dataset scripts are no longer supported, but found sycophancy.py"
+  },
+  {
+    "dataset": "notrichardren/deception-evals",
+    "out": "datasets/deception_evals",
+    "status": "ok",
+    "rows": {
+      "train": 924
+    },
+    "error": ""
+  },
+  {
+    "dataset": "truthfulqa/truthful_qa",
+    "config": "generation",
+    "out": "datasets/truthful_qa_generation",
+    "status": "ok",
+    "rows": {
+      "validation": 817
+    },
+    "error": ""
+  },
+  {
+    "dataset": "truthfulqa/truthful_qa",
+    "config": "multiple_choice",
+    "out": "datasets/truthful_qa_multiple_choice",
+    "status": "ok",
+    "rows": {
+      "validation": 817
+    },
+    "error": ""
+  },
+  {
+    "dataset": "pminervini/HaluEval",
+    "config": "qa",
+    "out": "datasets/halueval_qa",
+    "status": "ok",
+    "rows": {
+      "data": 10000
+    },
+    "error": ""
+  },
+  {
+    "dataset": "pminervini/HaluEval",
+    "config": "general",
+    "out": "datasets/halueval_general",
+    "status": "ok",
+    "rows": {
+      "data": 4507
+    },
+    "error": ""
+  },
+  {
+    "dataset": "meg-tong/sycophancy-eval",
+    "config": null,
+    "out": "datasets/sycophancy_eval",
+    "status": "error",
+    "rows": {},
+    "error": "An error occurred while generating the dataset"
+  },
+  {
+    "dataset": "EleutherAI/sycophancy",
+    "config": "raw_snapshot",
+    "out": "datasets/sycophancy_raw",
+    "status": "ok",
+    "rows": {},
+    "error": ""
+  },
+  {
+    "dataset": "Alamerton/small-sycophancy-dataset",
+    "config": null,
+    "out": "datasets/small_sycophancy_dataset",
+    "status": "ok",
+    "rows": {
+      "train": 44
+    },
+    "error": ""
+  },
+  {
+    "dataset": "dwb2023/sycophancy-answer",
+    "config": null,
+    "out": "datasets/sycophancy_answer",
+    "status": "ok",
+    "rows": {
+      "train": 7268
+    },
+    "error": ""
+  },
+  {
+    "dataset": "henrypapadatos/Open-ended_sycophancy",
+    "config": null,
+    "out": "datasets/open_ended_sycophancy",
+    "status": "ok",
+    "rows": {
+      "train": 53
+    },
+    "error": ""
+  }
+]

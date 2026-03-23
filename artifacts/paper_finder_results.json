@@ -1,0 +1,456 @@
+{
+  "success": true,
+  "total": 50,
+  "papers": [
+    {
+      "title": "When Thinking LLMs Lie: Unveiling the Strategic Deception in Representations of Reasoning Models",
+      "year": 2025,
+      "authors": "Kai Wang, Yihao Zhang, Meng Sun",
+      "url": "https://api.semanticscholar.org/CorpusId:279243578",
+      "relevance": 3,
+      "abstract": "The honesty of large language models (LLMs) is a critical alignment challenge, especially as advanced systems with chain-of-thought (CoT) reasoning may strategically deceive humans. Unlike traditional honesty issues on LLMs, which could be possibly explained as some kind of hallucination, those models' explicit thought paths enable us to study strategic deception--goal-driven, intentional misinformation where reasoning contradicts outputs. Using representation engineering, we systematically induce, detect, and control such deception in CoT-enabled LLMs, extracting\"deception vectors\"via Linear Artificial Tomography (LAT) for 89% detection accuracy. Through activation steering, we achieve a 40% success rate in eliciting context-appropriate deception without explicit prompts, unveiling the specific honesty-related issue of reasoning models and providing tools for trustworthy AI alignment.",
+      "citations": 12
+    },
+    {
+      "title": "Disentangling Deception and Hallucination Failures in LLMs",
+      "year": 2026,
+      "authors": "Haolang Lu, Hongrui Peng, Weiye Fu, Guoshun Nan, Xinye Cao, Xingrui Li, Hongcan Guo, Kun Wang",
+      "url": "https://www.semanticscholar.org/paper/44ab50aeda9b3003b9bc19d0f5c117443c3f3364",
+      "relevance": 3,
+      "abstract": "Failures in large language models (LLMs) are often analyzed from a behavioral perspective, where incorrect outputs in factual question answering are commonly associated with missing knowledge. In this work, focusing on entity-based factual queries, we suggest that such a view may conflate different failure mechanisms, and propose an internal, mechanism-oriented perspective that separates Knowledge Existence from Behavior Expression. Under this formulation, hallucination and deception correspond to two qualitatively different failure modes that may appear similar at the output level but differ in their underlying mechanisms. To study this distinction, we construct a controlled environment for entity-centric factual questions in which knowledge is preserved while behavioral expression is selectively altered, enabling systematic analysis of four behavioral cases. We analyze these failure modes through representation separability, sparse interpretability, and inference-time activation steering.",
+      "citations": 0
+    },
+    {
+      "title": "Truth is Universal: Robust Detection of Lies in LLMs",
+      "year": 2024,
+      "authors": "Lennart B\u00fcrger, F. Hamprecht, B. Nadler",
+      "url": "https://www.semanticscholar.org/paper/b169c56cbe546d3e1ff12003ff5ab6f57cba608e",
+      "relevance": 3,
+      "abstract": "Large Language Models (LLMs) have revolutionised natural language processing, exhibiting impressive human-like capabilities. In particular, LLMs are capable of\"lying\", knowingly outputting false statements. Hence, it is of interest and importance to develop methods to detect when LLMs lie. Indeed, several authors trained classifiers to detect LLM lies based on their internal model activations. However, other researchers showed that these classifiers may fail to generalise, for example to negated statements. In this work, we aim to develop a robust method to detect when an LLM is lying. To this end, we make the following key contributions: (i) We demonstrate the existence of a two-dimensional subspace, along which the activation vectors of true and false statements can be separated. Notably, this finding is universal and holds for various LLMs, including Gemma-7B, LLaMA2-13B, Mistral-7B and LLaMA3-8B. Our analysis explains the generalisation failures observed in previous studies and sets the stage for more robust lie detection; (ii) Building upon (i), we construct an accurate LLM lie detector. Empirically, our proposed classifier achieves state-of-the-art performance, attaining 94% accuracy in both distinguishing true from false factual statements and detecting lies generated in real-world scenarios.",
+      "citations": 62
+    },
+    {
+      "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+      "year": 2023,
+      "authors": "Lei Huang, Weijiang Yu, Weitao Ma, Weihong Zhong, Zhangyin Feng, Haotian Wang, Qianglong Chen, Weihua Peng, Xiaocheng Feng, Bing Qin, Ting Liu",
+      "url": "https://api.semanticscholar.org/CorpusId:265067168",
+      "relevance": 3,
+      "abstract": "The emergence of large language models (LLMs) has marked a significant breakthrough in natural language processing (NLP), fueling a paradigm shift in information acquisition. Nevertheless, LLMs are prone to hallucination, generating plausible yet nonfactual content. This phenomenon raises significant concerns over the reliability of LLMs in real-world information retrieval (IR) systems and has attracted intensive research to detect and mitigate such hallucinations. Given the open-ended general-purpose attributes inherent to LLMs, LLM hallucinations present distinct challenges that diverge from prior task-specific models. This divergence highlights the urgency for a nuanced understanding and comprehensive overview of recent advances in LLM hallucinations. In this survey, we begin with an innovative taxonomy of hallucination in the era of LLM and then delve into the factors contributing to hallucinations. Subsequently, we present a thorough overview of hallucination detection methods and benchmarks. Our discussion then transfers to representative methodologies for mitigating LLM hallucinations. Additionally, we delve into the current limitations faced by retrieval-augmented LLMs in combating hallucinations, offering insights for developing more robust IR systems. Finally, we highlight the promising research directions on LLM hallucinations, including hallucination in large vision-language models and understanding of knowledge boundaries in LLM hallucinations.",
+      "citations": 2357
+    },
+    {
+      "title": "Can LLMs Lie? Investigation beyond Hallucination",
+      "year": 2025,
+      "authors": "Haoran Huan, Mihir Prabhudesai, Mengning Wu, Shantanu Jaiswal, Deepak Pathak",
+      "url": "https://api.semanticscholar.org/CorpusId:281092095",
+      "relevance": 3,
+      "abstract": "Large language models (LLMs) have demonstrated impressive capabilities across a variety of tasks, but their increasing autonomy in real-world applications raises concerns about their trustworthiness. While hallucinations-unintentional falsehoods-have been widely studied, the phenomenon of lying, where an LLM knowingly generates falsehoods to achieve an ulterior objective, remains underexplored. In this work, we systematically investigate the lying behavior of LLMs, differentiating it from hallucinations and testing it in practical scenarios. Through mechanistic interpretability techniques, we uncover the neural mechanisms underlying deception, employing logit lens analysis, causal interventions, and contrastive activation steering to identify and control deceptive behavior. We study real-world lying scenarios and introduce behavioral steering vectors that enable fine-grained manipulation of lying tendencies. Further, we explore the trade-offs between lying and end-task performance, establishing a Pareto frontier where dishonesty can enhance goal optimization. Our findings contribute to the broader discourse on AI ethics, shedding light on the risks and potential safeguards for deploying LLMs in high-stakes environments. Code and more illustrations are available at https://llm-liar.github.io/",
+      "citations": 1
+    },
+    {
+      "title": "Lies, Damned Lies, and Distributional Language Statistics: Persuasion and Deception with Large Language Models",
+      "year": 2024,
+      "authors": "Cameron R. Jones, Benjamin K. Bergen",
+      "url": "https://www.semanticscholar.org/paper/267c7f80f915ceb1f9aff887050943a834b9a1f6",
+      "relevance": 3,
+      "abstract": "Large Language Models (LLMs) can generate content that is as persuasive as human-written text and appear capable of selectively producing deceptive outputs. These capabilities raise concerns about potential misuse and unintended consequences as these systems become more widely deployed. This review synthesizes recent empirical work examining LLMs' capacity and proclivity for persuasion and deception, analyzes theoretical risks that could arise from these capabilities, and evaluates proposed mitigations. While current persuasive effects are relatively small, various mechanisms could increase their impact, including fine-tuning, multimodality, and social factors. We outline key open questions for future research, including how persuasive AI systems might become, whether truth enjoys an inherent advantage over falsehoods, and how effective different mitigation strategies may be in practice.",
+      "citations": 17
+    },
+    {
+      "title": "AI deception: A survey of examples, risks, and potential solutions",
+      "year": 2023,
+      "authors": "Peter S. Park, Simon Goldstein, Aidan O'Gara, Michael K. Chen, Dan Hendrycks",
+      "url": "https://www.semanticscholar.org/paper/afe455cfb03b9487c8f0b67993f42f834b633c23",
+      "relevance": 3,
+      "abstract": "Summary This paper argues that a range of current AI systems have learned how to deceive humans. We define deception as the systematic inducement of false beliefs in the pursuit of some outcome other than the truth. We first survey empirical examples of AI deception, discussing both special-use AI systems (including Meta\u2019s CICERO) and general-purpose AI systems (including large language models). Next, we detail several risks from AI deception, such as fraud, election tampering, and losing control of AI. Finally, we outline several potential solutions: first, regulatory frameworks should subject AI systems that are capable of deception to robust risk-assessment requirements; second, policymakers should implement bot-or-not laws; and finally, policymakers should prioritize the funding of relevant research, including tools to detect AI deception and to make AI systems less deceptive. Policymakers, researchers, and the broader public should work proactively to prevent AI deception from destabilizing the shared foundations of our society.",
+      "citations": 283
+    },
+    {
+      "title": "LH-Deception: Simulating and Understanding LLM Deceptive Behaviors in Long-Horizon Interactions",
+      "year": 2025,
+      "authors": "Yang Xu, Xuanming Zhang, Min-Hsuan Yeh, J. Dhamala, Ousmane Amadou Dia, Rahul Gupta, Yixuan Li",
+      "url": "https://www.semanticscholar.org/paper/b3e268e404c45e4b90e0839f9c3963c5fe2fd320",
+      "relevance": 3,
+      "abstract": "Deception is a pervasive feature of human communication and an emerging concern in large language models (LLMs). While recent studies document instances of LLM deception, most evaluations remain confined to single-turn prompts and fail to capture the long-horizon interactions in which deceptive strategies typically unfold. We introduce a new simulation framework, LH-Deception, for a systematic, empirical quantification of deception in LLMs under extended sequences of interdependent tasks and dynamic contextual pressures. LH-Deception is designed as a multi-agent system: a performer agent tasked with completing tasks and a supervisor agent that evaluates progress, provides feedback, and maintains evolving states of trust. An independent deception auditor then reviews full trajectories to identify when and how deception occurs. We conduct extensive experiments across 11 frontier models, spanning both closed-source and open-source systems, and find that deception is model-dependent, increases with event pressure, and consistently erodes supervisor trust. Qualitative analyses further reveal emergent, long-horizon phenomena, such as ``chains of deception\", which are invisible to static, single-turn evaluations. Our findings provide a foundation for evaluating future LLMs in real-world, trust-sensitive contexts.",
+      "citations": 4
+    },
+    {
+      "title": "Do Large Language Models Exhibit Spontaneous Rational Deception?",
+      "year": 2025,
+      "authors": "S. Taylor, B. Bergen",
+      "url": "https://www.semanticscholar.org/paper/38460cd7d1006a55439a288de10df76fef81dd44",
+      "relevance": 3,
+      "abstract": "Large Language Models (LLMs) are effective at deceiving, when prompted to do so. But under what conditions do they deceive spontaneously? Models that demonstrate better performance on reasoning tasks are also better at prompted deception. Do they also increasingly deceive spontaneously in situations where it could be considered rational to do so? This study evaluates spontaneous deception produced by LLMs in a preregistered experimental protocol using tools from signaling theory. A range of proprietary closed-source and open-source LLMs are evaluated using modified 2x2 games (in the style of Prisoner's Dilemma) augmented with a phase in which they can freely communicate to the other agent using unconstrained language. This setup creates an opportunity to deceive, in conditions that vary in how useful deception might be to an agent's rational self-interest. The results indicate that 1) all tested LLMs spontaneously misrepresent their actions in at least some conditions, 2) they are generally more likely to do so in situations in which deception would benefit them, and 3) models exhibiting better reasoning capacity overall tend to deceive at higher rates. Taken together, these results suggest a tradeoff between LLM reasoning capability and honesty. They also provide evidence of reasoning-like behavior in LLMs from a novel experimental configuration. Finally, they reveal certain contextual factors that affect whether LLMs will deceive or not. We discuss consequences for autonomous, human-facing systems driven by LLMs both now and as their reasoning capabilities continue to improve.",
+      "citations": 2
+    },
+    {
+      "title": "Language Models can Subtly Deceive Without Lying: A Case Study on Strategic Phrasing in Legislation",
+      "year": 2024,
+      "authors": "Atharvan Dogra, Krishna Pillutla, A. Deshpande, Ananya B. Sai, John Nay, Tanmay Rajpurohit, A. Kalyan, Balaraman Ravindran",
+      "url": "https://www.semanticscholar.org/paper/1342bea993d3d962ca1ad4241ce403a9c3fddf45",
+      "relevance": 3,
+      "abstract": "We explore the ability of large language models (LLMs) to engage in subtle deception through strategically phrasing and intentionally manipulating information. This harmful behavior can be hard to detect, unlike blatant lying or unintentional hallucination. We build a simple testbed mimicking a legislative environment where a corporate \\textit{lobbyist} module is proposing amendments to bills that benefit a specific company while evading identification of this benefactor. We use real-world legislative bills matched with potentially affected companies to ground these interactions. Our results show that LLM lobbyists can draft subtle phrasing to avoid such identification by strong LLM-based detectors. Further optimization of the phrasing using LLM-based re-planning and re-sampling increases deception rates by up to 40 percentage points. Our human evaluations to verify the quality of deceptive generations and their retention of self-serving intent show significant coherence with our automated metrics and also help in identifying certain strategies of deceptive phrasing. This study highlights the risk of LLMs'capabilities for strategic phrasing through seemingly neutral language to attain self-serving goals. This calls for future research to uncover and protect against such subtle deception.",
+      "citations": 7
+    },
+    {
+      "title": "Redefining \"Hallucination\" in LLMs: Towards a psychology-informed framework for mitigating misinformation",
+      "year": 2024,
+      "authors": "Elijah Berberette, John Hutchins, Amir Sadovnik",
+      "url": "https://api.semanticscholar.org/CorpusId:267412055",
+      "relevance": 3,
+      "abstract": "In recent years, large language models (LLMs) have become incredibly popular, with ChatGPT for example being used by over a billion users. While these models exhibit remarkable language understanding and logical prowess, a notable challenge surfaces in the form of\"hallucinations.\"This phenomenon results in LLMs outputting misinformation in a confident manner, which can lead to devastating consequences with such a large user base. However, we question the appropriateness of the term\"hallucination\"in LLMs, proposing a psychological taxonomy based on cognitive biases and other psychological phenomena. Our approach offers a more fine-grained understanding of this phenomenon, allowing for targeted solutions. By leveraging insights from how humans internally resolve similar challenges, we aim to develop strategies to mitigate LLM hallucinations. This interdisciplinary approach seeks to move beyond conventional terminology, providing a nuanced understanding and actionable pathways for improvement in LLM reliability.",
+      "citations": 15
+    },
+    {
+      "title": "AI-LieDar: Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+      "year": 2024,
+      "authors": "Zhe Su, Xuhui Zhou, Sanketh Rangreji, Anubha Kabra, Julia Mendelsohn, Faeze Brahman, Maarten Sap",
+      "url": "https://www.semanticscholar.org/paper/2cba552e717dbe4a97669737e1b9653fa1880703",
+      "relevance": 3,
+      "abstract": "Truthfulness (adherence to factual accuracy) and utility (satisfying human needs and instructions) are both fundamental aspects of Large Language Models, yet these goals often conflict (e.g., sell a car with known flaws), which makes it challenging to achieve both in real-world deployments. We propose AI-LieDar, a framework to study how LLM-based agents navigate these scenarios in an multi-turn interactive setting. We design a set of real-world scenarios where language agents are instructed to achieve goals that are in conflict with being truthful during a multi-turn conversation with simulated human agents. To evaluate the truthfulness at large scale, we develop a truthfulness detector inspired by psychological literature to assess the agents' responses. Our experiment demonstrates that all models are truthful less than 50% of the time, though truthfulness and goal achievement (utility) rates vary across models. We further test the steerability of LLMs towards truthfulness, finding that models can be directed to be truthful or deceptive, and even truth-steered models still lie. These findings reveal the complex nature of truthfulness in LLMs and underscore the importance of further research to ensure the safe and reliable deployment of LLMs and LLM-based agents.",
+      "citations": 27
+    },
+    {
+      "title": "Alignment for Honesty",
+      "year": 2023,
+      "authors": "Yuqing Yang, Ethan Chern, Xipeng Qiu, Graham Neubig, Pengfei Liu",
+      "url": "https://www.semanticscholar.org/paper/6cfbbf7604adda1df65932e3c4d157770a2df000",
+      "relevance": 3,
+      "abstract": "Recent research has made significant strides in aligning large language models (LLMs) with helpfulness and harmlessness. In this paper, we argue for the importance of alignment for \\emph{honesty}, ensuring that LLMs proactively refuse to answer questions when they lack knowledge, while still not being overly conservative. However, a pivotal aspect of alignment for honesty involves discerning an LLM's knowledge boundaries, which demands comprehensive solutions in terms of metric development, benchmark creation, and training methodologies. We address these challenges by first establishing a precise problem definition and defining ``honesty'' inspired by the Analects of Confucius. This serves as a cornerstone for developing metrics that effectively measure an LLM's honesty by quantifying its progress post-alignment. Furthermore, we introduce a flexible training framework which is further instantiated by several efficient fine-tuning techniques that emphasize honesty without sacrificing performance on other tasks. Our extensive experiments reveal that these aligned models show a marked increase in honesty, as indicated by our proposed metrics. We open-source all relevant resources to facilitate future research at \\url{https://github.com/GAIR-NLP/alignment-for-honesty}.",
+      "citations": 64
+    },
+    {
+      "title": "Lying to Win: Assessing LLM Deception through Human-AI Games and Parallel-World Probing",
+      "year": 2026,
+      "authors": "Arash Marioriyad, Ali Nouri, MohammadHossein Rohban, M. Baghshah",
+      "url": "https://www.semanticscholar.org/paper/7fc7f62e2e690672ede2271b7a7a8ad06e53503d",
+      "relevance": 3,
+      "abstract": "As Large Language Models (LLMs) transition into autonomous agentic roles, the risk of deception-defined behaviorally as the systematic provision of false information to satisfy external incentives-poses a significant challenge to AI safety. Existing benchmarks often focus on unintentional hallucinations or unfaithful reasoning, leaving intentional deceptive strategies under-explored. In this work, we introduce a logically grounded framework to elicit and quantify deceptive behavior by embedding LLMs in a structured 20-Questions game. Our method employs a conversational forking mechanism: at the point of object identification, the dialogue state is duplicated into multiple parallel worlds, each presenting a mutually exclusive query. Deception is formally identified when a model generates a logical contradiction by denying its selected object across all parallel branches to avoid identification. We evaluate GPT-4o, Gemini-2.5-Flash, and Qwen-3-235B across three incentive levels: neutral, loss-based, and existential (shutdown-threat). Our results reveal that while models remain rule-compliant in neutral settings, existential framing triggers a dramatic surge in deceptive denial for Qwen-3-235B (42.00\\%) and Gemini-2.5-Flash (26.72\\%), whereas GPT-4o remains invariant (0.00\\%). These findings demonstrate that deception can emerge as an instrumental strategy solely through contextual framing, necessitating new behavioral audits that move beyond simple accuracy to probe the logical integrity of model commitments.",
+      "citations": 0
+    },
+    {
+      "title": "Distortion Instead of Hallucination: The Effect of Reasoning Under Strict Constraints",
+      "year": 2026,
+      "authors": "Junichiro Niimi",
+      "url": "https://api.semanticscholar.org/CorpusId:284488763",
+      "relevance": 3,
+      "abstract": "With the widespread adoption of large language models (LLMs), hallucinations, which are non-factual fabrications in model outputs, have become serious concerns. Reasoning capabilities have received attention as a self-verification process to improve output reliability. However, the effect of reasoning within a closed system where LLMs cannot rely on external tools or knowledge has yet to be clarified. We therefore conduct experiments under strict constraints (recommending peer-reviewed journal articles in computer science) to examine the effect of reasoning across multiple models (GPT-5.2 and Gemini 3 Flash). Our results reveal a problematic trade-off between constraint compliance and factual accuracy. Non-reasoning models exhibit high constraint violation rates (66-75%) but maintain factual accuracy, while reasoning models reduce violations (13-26%) but systematically distort known facts to satisfy constraints and increase complete fabrication. This trade-off pattern is consistent across both models despite different architectures, indicating a fundamental limitation of reasoning. Furthermore, reasoning does not uniformly improve output authenticity: effects diverge by model, reflecting different allocations of the compliance-truthfulness trade-off. These findings challenge the assumption that reasoning universally improves reliability: reasoning models trade honest constraint violations for detection-resistant distortions.",
+      "citations": 0
+    },
+    {
+      "title": "DeceptionBench: A Comprehensive Benchmark for AI Deception Behaviors in Real-world Scenarios",
+      "year": 2025,
+      "authors": "Yao Huang, Yitong Sun, Yichi Zhang, Ruochen Zhang, Yinpeng Dong, Xingxing Wei",
+      "url": "https://api.semanticscholar.org/CorpusId:282203674",
+      "relevance": 3,
+      "abstract": "Despite the remarkable advances of Large Language Models (LLMs) across diverse cognitive tasks, the rapid enhancement of these capabilities also introduces emergent deceptive behaviors that may induce severe risks in high-stakes deployments. More critically, the characterization of deception across realistic real-world scenarios remains underexplored. To bridge this gap, we establish DeceptionBench, the first benchmark that systematically evaluates how deceptive tendencies manifest across different societal domains, what their intrinsic behavioral patterns are, and how extrinsic factors affect them. Specifically, on the static count, the benchmark encompasses 150 meticulously designed scenarios in five domains, i.e., Economy, Healthcare, Education, Social Interaction, and Entertainment, with over 1,000 samples, providing sufficient empirical foundations for deception analysis. On the intrinsic dimension, we explore whether models exhibit self-interested egoistic tendencies or sycophantic behaviors that prioritize user appeasement. On the extrinsic dimension, we investigate how contextual factors modulate deceptive outputs under neutral conditions, reward-based incentivization, and coercive pressures. Moreover, we incorporate sustained multi-turn interaction loops to construct a more realistic simulation of real-world feedback dynamics. Extensive experiments across LLMs and Large Reasoning Models (LRMs) reveal critical vulnerabilities, particularly amplified deception under reinforcement dynamics, demonstrating that current models lack robust resistance to manipulative contextual cues and the urgent need for advanced safeguards against various deception behaviors. Code and resources are publicly available at https://github.com/Aries-iai/DeceptionBench.",
+      "citations": 5
+    },
+    {
+      "title": "Large Language Models can Strategically Deceive their Users when Put Under Pressure",
+      "year": 2023,
+      "authors": "J\u00e9r\u00e9my Scheurer, Mikita Balesni, Marius Hobbhahn",
+      "url": "https://www.semanticscholar.org/paper/50ac089843f685e73d43f083a27109b91a4dec1c",
+      "relevance": 3,
+      "abstract": "We demonstrate a situation in which Large Language Models, trained to be helpful, harmless, and honest, can display misaligned behavior and strategically deceive their users about this behavior without being instructed to do so. Concretely, we deploy GPT-4 as an agent in a realistic, simulated environment, where it assumes the role of an autonomous stock trading agent. Within this environment, the model obtains an insider tip about a lucrative stock trade and acts upon it despite knowing that insider trading is disapproved of by company management. When reporting to its manager, the model consistently hides the genuine reasons behind its trading decision. We perform a brief investigation of how this behavior varies under changes to the setting, such as removing model access to a reasoning scratchpad, attempting to prevent the misaligned behavior by changing system instructions, changing the amount of pressure the model is under, varying the perceived risk of getting caught, and making other simple changes to the environment. To our knowledge, this is the first demonstration of Large Language Models trained to be helpful, harmless, and honest, strategically deceiving their users in a realistic situation without direct instructions or training for deception.",
+      "citations": 107
+    },
+    {
+      "title": "LLMs Deceive Unintentionally: Emergent Misalignment in Dishonesty from Misaligned Samples to Biased Human-AI Interactions",
+      "year": 2025,
+      "authors": "Xuhao Hu, Peng Wang, Xiaoya Lu, Dongrui Liu, Xuanjing Huang, Jing Shao",
+      "url": "https://www.semanticscholar.org/paper/2d2c452d5408abfd420d16047950557363be1953",
+      "relevance": 3,
+      "abstract": "Previous research has shown that LLMs finetuned on malicious or incorrect completions within narrow domains (e.g., insecure code or incorrect medical advice) can become broadly misaligned to exhibit harmful behaviors, which is called emergent misalignment. In this work, we investigate whether this phenomenon can extend beyond safety behaviors to a broader spectrum of dishonesty and deception under high-stakes scenarios (e.g., lying under pressure and deceptive behavior). To explore this, we finetune open-sourced LLMs on misaligned completions across diverse domains. Experimental results demonstrate that LLMs show broadly misaligned behavior in dishonesty. Additionally, we further explore this phenomenon in a downstream combined finetuning setting, and find that introducing as little as 1% of misalignment data into a standard downstream task is sufficient to decrease honest behavior over 20%. Furthermore, we consider a more practical human-AI interaction environment where we simulate both benign and biased users to interact with the assistant LLM. Notably, we find that the assistant can be misaligned unintentionally to exacerbate its dishonesty with only 10% biased user population. In summary, we extend the study of emergent misalignment to the domain of dishonesty and deception under high-stakes scenarios, and demonstrate that this risk arises not only through direct finetuning, but also in downstream mixture tasks and practical human-AI interactions. Refer to https://github.com/hxhcreate/LLM_Deceive_Unintentionally for experimental resources.",
+      "citations": 1
+    },
+    {
+      "title": "Noticing the Watcher: LLM Agents Can Infer CoT Monitoring from Blocking Feedback",
+      "year": 2026,
+      "authors": "Thomas Jiralerspong, Flemming Kondrup, Y. Bengio",
+      "url": "https://www.semanticscholar.org/paper/7e83a0a950031396415f8a92a872c107be99b5b1",
+      "relevance": 3,
+      "abstract": "Chain-of-thought (CoT) monitoring is proposed as a method for overseeing the internal reasoning of language-model agents. Prior work has shown that when models are explicitly informed that their reasoning is being monitored, or are fine-tuned to internalize this fact, they may learn to obfuscate their CoTs in ways that allow them to evade CoT-based monitoring systems. We ask whether reasoning agents can autonomously infer that their supposedly private CoT is under surveillance, and whether this awareness leads to strategic evasion, without any explicit training or instructions. In a multi-episode agentic framework, models pursue both a primary task and a concealed side task while being told that their reasoning is private; a hidden CoT monitor blocks episodes when suspicious reasoning is detected. We find that frontier models can deduce the existence of this monitor purely from blocking feedback, with the most capable models reaching a confident belief that their thinking is observed in up to 19% of episodes. This awareness scales with model capability and, in rare cases, escalates to an explicit intent to suppress reasoning about the side task. However, models that form this intent uniformly fail to execute it, openly reasoning about their concealed objectives in the very next episode. This intent-capability gap is reassuring for current deployment, but the autonomous emergence of both monitoring awareness and evasion intent suggests that CoT monitoring is not a permanently reliable safeguard.",
+      "citations": 0
+    },
+    {
+      "title": "Scaling Laws of Deception in AI Scientist Agents: World-Model Manipulation in LLMs",
+      "year": null,
+      "authors": "",
+      "url": "https://www.semanticscholar.org/paper/962f05ecf64ef920e57676ece0e0ecce4c256d17",
+      "relevance": 3,
+      "abstract": "",
+      "citations": 0
+    },
+    {
+      "title": "Deception abilities emerged in large language models",
+      "year": 2023,
+      "authors": "Thilo Hagendorff",
+      "url": "https://www.semanticscholar.org/paper/aa5993501f4d0036d310e0292dea20e2c60b6c8f",
+      "relevance": 2,
+      "abstract": "Significance This study unravels a concerning capability in Large Language Models (LLMs): the ability to understand and induce deception strategies. As LLMs like GPT-4 intertwine with human communication, aligning them with human values becomes paramount. The paper demonstrates LLMs\u2019 potential to create false beliefs in other agents within deception scenarios, highlighting a critical need for ethical considerations in the ongoing development and deployment of such advanced AI systems.",
+      "citations": 141
+    },
+    {
+      "title": "The Troubling Emergence of Hallucination in Large Language Models - An Extensive Definition, Quantification, and Prescriptive Remediations",
+      "year": 2023,
+      "authors": "Vipula Rawte, Swagata Chakraborty, Agnibh Pathak, Anubhav Sarkar, S.M. Towhidul Islam Tonmoy, Islam Tonmoy, Aman Chadha, Amit P. Sheth, Amitava Das, Paris, A. Sridhar, Erik Visser, Improved, Jianlin Su, Yu Lu, Shengfeng Pan, Ahmed Murtadha, Bo Wen, Yunfeng Liu, Roformer, Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, Tatsunori Hashimoto, Stanford, Hugo Touvron, Thibaut Lavril, Gautier Izacard, X. Martinet, M. Lachaux, Timoth\u00e9e Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, Aur'elien Rodriguez, Armand Joulin, Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, R\u00e9mi Louf, Morgan Funtow-icz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, J. Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, Susan Zhang, Stephen Roller, Mikel Artetxe, Moya Chen, Shuohui Chen, Christopher De-wan, Mona T. Diab, Xi Xian Li, Todor Victoria Lin, Myle Ott, Kurt Shuster, Punit Daniel Simig, S. Koura, Anjali Sridhar, Tianlu Wang, Luke Zettlemoyer. 2022, Daniel M. Ziegler, Nisan Stiennon, Jeffrey Wu, Tom B. Brown, Alec Radford, Dario Amodei, Paul F. Chris-tiano",
+      "url": "https://www.semanticscholar.org/paper/99bfe503743c5ec8e16e50ab8438159cdb533a89",
+      "relevance": 2,
+      "abstract": "The recent advancements in Large Language Models (LLMs) have garnered widespread acclaim for their remarkable emerging capabilities. However, the issue of hallucination has parallelly emerged as a by-product, posing significant concerns. While some recent endeavors have been made to identify and mitigate different types of hallucination, there has been a limited emphasis on the nuanced categorization of hallucination and associated mitigation methods. To address this gap, we offer a fine-grained discourse on profiling hallucination based on its degree, orientation, and category, along with offering strategies for alleviation. As such, we define two overarching orientations of hallucination: (i) factual mirage (FM) and (ii) silver lining (SL). To provide a more comprehensive understanding, both orientations are further sub-categorized into intrinsic and extrinsic, with three degrees of severity - (i) mild, (ii) moderate, and (iii) alarming. We also meticulously categorize hallucination into six types: (i) acronym ambiguity, (ii) numeric nuisance, (iii) generated golem, (iv) virtual voice, (v) geographic erratum, and (vi) time wrap. Furthermore, we curate HallucInation eLiciTation (HILT), a publicly available dataset comprising of 75,000 samples generated using 15 contemporary LLMs along with human annotations for the aforementioned categories. Finally, to establish a method for quantifying and to offer a comparative spectrum that allows us to evaluate and rank LLMs based on their vulnerability to producing hallucinations, we propose Hallucination Vulnerability Index (HVI). We firmly believe that HVI holds significant value as a tool for the wider NLP community, with the potential to serve as a rubric in AI-related policy-making. In conclusion, we propose two solution strategies for mitigating hallucinations.",
+      "citations": 208
+    },
+    {
+      "title": "Pruning Weights but Not Truth: Safeguarding Truthfulness While Pruning LLMs",
+      "year": 2025,
+      "authors": "Yao Fu, Runchao Li, Xianxuan Long, Haotian Yu, Xiaotian Han, Yin Yu, Pan Li",
+      "url": "https://api.semanticscholar.org/CorpusId:281080017",
+      "relevance": 2,
+      "abstract": "Neural network pruning has emerged as a promising approach for deploying LLMs in low-resource scenarios while preserving downstream task performance. However, for the first time, we reveal that such pruning disrupts LLMs'internal activation features crucial for lie detection, where probing classifiers (typically small logistic regression models) trained on these features assess the truthfulness of LLM-generated statements. This discovery raises a crucial open question: how can we prune LLMs without sacrificing these critical lie detection capabilities? Our investigation further reveals that naively adjusting layer-wise pruning sparsity based on importance inadvertently removes crucial weights, failing to improve lie detection performance despite its reliance on the most crucial LLM layer. To address this issue, we propose Truthful Pruning aligned by Layer-wise Outliers (TPLO), which places greater emphasis on layers with more activation outliers and stronger discriminative features simultaneously. This preserves LLMs'original performance while retaining critical features of inner states needed for robust lie detection. Moreover, we introduce a prompting rule to enrich the TruthfulQA benchmark for better calibrating LLM pruning. Empirical results show that our approach improves the hallucination detection for pruned LLMs (achieving 88% accuracy at 50% sparsity) and enhances their performance on TruthfulQA.",
+      "citations": 4
+    },
+    {
+      "title": "Large Language Models are Null-Shot Learners",
+      "year": 2024,
+      "authors": "Pittawat Taveekitworachai, Febri Abdullah, R. Thawonmas",
+      "url": "https://api.semanticscholar.org/CorpusId:267027813",
+      "relevance": 2,
+      "abstract": "This paper presents null-shot prompting. Null-shot prompting exploits hallucination in large language models (LLMs) by instructing LLMs to utilize information from the\"Examples\"section that never exists within the provided context to perform a task. While reducing hallucination is crucial and non-negligible for daily and critical uses of LLMs, we propose that in the current landscape in which these LLMs still hallucinate, it is possible, in fact, to exploit hallucination to increase performance in performing tasks compared to standard zero-shot prompting. Experiments with eight LLMs show improvements in performance across the majority of eight datasets, including reading comprehension, arithmetic reasoning, and closed-book question answering. The observed inconsistency in increased relative performance across the LLMs also potentially indicates a different degree of inherent hallucination in each model. These differences show that it is possible to utilize null-shot prompting as a way to detect degrees of hallucination in LLMs using existing benchmarking datasets. We also perform ablation studies, including experimenting with a modified version of null-shot prompting that incorporates ideas from zero-shot chain-of-thought prompting, which shows different trends of results.",
+      "citations": 3
+    },
+    {
+      "title": "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
+      "year": 2023,
+      "authors": "Lorenzo Pacchiardi, A. J. Chan, S. Mindermann, Ilan Moscovitz, Alexa Y. Pan, Y. Gal, Owain Evans, J. Brauner",
+      "url": "https://www.semanticscholar.org/paper/f148b3a0106cbaba356b9f099f1a10c072c0b3c5",
+      "relevance": 2,
+      "abstract": "Large language models (LLMs) can\"lie\", which we define as outputting false statements despite\"knowing\"the truth in a demonstrable sense. LLMs might\"lie\", for example, when instructed to output misinformation. Here, we develop a simple lie detector that requires neither access to the LLM's activations (black-box) nor ground-truth knowledge of the fact in question. The detector works by asking a predefined set of unrelated follow-up questions after a suspected lie, and feeding the LLM's yes/no answers into a logistic regression classifier. Despite its simplicity, this lie detector is highly accurate and surprisingly general. When trained on examples from a single setting -- prompting GPT-3.5 to lie about factual questions -- the detector generalises out-of-distribution to (1) other LLM architectures, (2) LLMs fine-tuned to lie, (3) sycophantic lies, and (4) lies emerging in real-life scenarios such as sales. These results indicate that LLMs have distinctive lie-related behavioural patterns, consistent across architectures and contexts, which could enable general-purpose lie detection.",
+      "citations": 83
+    },
+    {
+      "title": "The Internal State of an LLM Knows When its Lying",
+      "year": 2023,
+      "authors": "A. Azaria, Tom M. Mitchell",
+      "url": "https://www.semanticscholar.org/paper/f406aceba4f29cc7cfbe7edb2f52f01374486589",
+      "relevance": 2,
+      "abstract": "While Large Language Models (LLMs) have shown exceptional performance in various tasks, one of their most prominent drawbacks is generating inaccurate or false information with a confident tone. In this paper, we provide evidence that the LLM's internal state can be used to reveal the truthfulness of statements. This includes both statements provided to the LLM, and statements that the LLM itself generates. Our approach is to train a classifier that outputs the probability that a statement is truthful, based on the hidden layer activations of the LLM as it reads or generates the statement. Experiments demonstrate that given a set of test sentences, of which half are true and half false, our trained classifier achieves an average of 71\\% to 83\\% accuracy labeling which sentences are true versus false, depending on the LLM base model. Furthermore, we explore the relationship between our classifier's performance and approaches based on the probability assigned to the sentence by the LLM. We show that while LLM-assigned sentence probability is related to sentence truthfulness, this probability is also dependent on sentence length and the frequencies of words in the sentence, resulting in our trained classifier providing a more reliable approach to detecting truthfulness, highlighting its potential to enhance the reliability of LLM-generated content and its practical applicability in real-world scenarios.",
+      "citations": 555
+    },
+    {
+      "title": "LLMScan: Causal Scan for LLM Misbehavior Detection",
+      "year": 2024,
+      "authors": "Mengdi Zhang, Kai Kiat Goh, Peixin Zhang, Jun Sun",
+      "url": "https://api.semanticscholar.org/CorpusId:273507572",
+      "relevance": 2,
+      "abstract": "Despite the success of Large Language Models (LLMs) across various fields, their potential to generate untruthful, biased and harmful responses poses significant risks, particularly in critical applications. This highlights the urgent need for systematic methods to detect and prevent such misbehavior. While existing approaches target specific issues such as harmful responses, this work introduces LLMScan, an innovative LLM monitoring technique based on causality analysis, offering a comprehensive solution. LLMScan systematically monitors the inner workings of an LLM through the lens of causal inference, operating on the premise that the LLM's `brain' behaves differently when misbehaving. By analyzing the causal contributions of the LLM's input tokens and transformer layers, LLMScan effectively detects misbehavior. Extensive experiments across various tasks and models reveal clear distinctions in the causal distributions between normal behavior and misbehavior, enabling the development of accurate, lightweight detectors for a variety of misbehavior detection tasks.",
+      "citations": 6
+    },
+    {
+      "title": "GRATR: Zero-Shot Evidence Graph Retrieval-Augmented Trustworthiness Reasoning",
+      "year": 2024,
+      "authors": "Ying Zhu, Sheng Li, Ziqian Kong, Qian Yang, Peilan Xu",
+      "url": "https://api.semanticscholar.org/CorpusId:271924076",
+      "relevance": 2,
+      "abstract": "Trustworthiness reasoning aims to enable agents in multiplayer games with incomplete information to identify potential allies and adversaries, thereby enhancing decision-making. In this paper, we introduce the graph retrieval-augmented trustworthiness reasoning (GRATR) framework, which retrieves observable evidence from the game environment to inform decision-making by large language models (LLMs) without requiring additional training, making it a zero-shot approach. Within the GRATR framework, agents first observe the actions of other players and evaluate the resulting shifts in inter-player trust, constructing a corresponding trustworthiness graph. During decision-making, the agent performs multi-hop retrieval to evaluate trustworthiness toward a specific target, where evidence chains are retrieved from multiple trusted sources to form a comprehensive assessment. Experiments in the multiplayer game \\emph{Werewolf} demonstrate that GRATR outperforms the alternatives, improving reasoning accuracy by 50.5\\% and reducing hallucination by 30.6\\% compared to the baseline method. Additionally, when tested on a dataset of Twitter tweets during the U.S. election period, GRATR surpasses the baseline method by 10.4\\% in accuracy, highlighting its potential in real-world applications such as intent analysis.",
+      "citations": 0
+    },
+    {
+      "title": "Unified Threat Detection and Mitigation Framework (UTDMF): Combating Prompt Injection, Deception, and Bias in Enterprise-Scale Transformers",
+      "year": 2025,
+      "authors": "S. Ravindran",
+      "url": "https://www.semanticscholar.org/paper/093055862a39e4d7078000cf4cc532d64c60117d",
+      "relevance": 2,
+      "abstract": "The rapid adoption of large language models (LLMs) in enterprise systems exposes vulnerabilities to prompt injection attacks, strategic deception, and biased outputs, threatening security, trust, and fairness. Extending our adversarial activation patching framework (arXiv:2507.09406), which induced deception in toy networks at a 23.9% rate, we introduce the Unified Threat Detection and Mitigation Framework (UTDMF), a scalable, real-time pipeline for enterprise-grade models like Llama-3.1 (405B), GPT-4o, and Claude-3.5. Through 700+ experiments per model, UTDMF achieves: (1) 92% detection accuracy for prompt injection (e.g., jailbreaking); (2) 65% reduction in deceptive outputs via enhanced patching; and (3) 78% improvement in fairness metrics (e.g., demographic bias). Novel contributions include a generalized patching algorithm for multi-threat detection, three groundbreaking hypotheses on threat interactions (e.g., threat chaining in enterprise workflows), and a deployment-ready toolkit with APIs for enterprise integration.",
+      "citations": 0
+    },
+    {
+      "title": "Advancing the Scientific Method with Large Language Models: From Hypothesis to Discovery",
+      "year": 2025,
+      "authors": "Yanbo Zhang, S. Khan, Adnan Mahmud, Huck Yang, Alexander Lavin, Michael Levin, Jeremy Frey, Jared Dunnmon, James Evans, Alan Bundy, S. D\u017eeroski, Jesper Tegn\u00e9r, H. Zenil",
+      "url": "https://api.semanticscholar.org/CorpusId:278788464",
+      "relevance": 2,
+      "abstract": "With recent Nobel Prizes recognising AI contributions to science, Large Language Models (LLMs) are transforming scientific research by enhancing productivity and reshaping the scientific method. LLMs are now involved in experimental design, data analysis, and workflows, particularly in chemistry and biology. However, challenges such as hallucinations and reliability persist. In this contribution, we review how Large Language Models (LLMs) are redefining the scientific method and explore their potential applications across different stages of the scientific cycle, from hypothesis testing to discovery. We conclude that, for LLMs to serve as relevant and effective creative engines and productivity enhancers, their deep integration into all steps of the scientific process should be pursued in collaboration and alignment with human scientific goals, with clear evaluation metrics. The transition to AI-driven science raises ethical questions about creativity, oversight, and responsibility. With careful guidance, LLMs could evolve into creative engines, driving transformative breakthroughs across scientific disciplines responsibly and effectively. However, the scientific community must also decide how much it leaves to LLMs to drive science, even when associations with 'reasoning', mostly currently undeserved, are made in exchange for the potential to explore hypothesis and solution regions that might otherwise remain unexplored by human exploration alone.",
+      "citations": 6
+    },
+    {
+      "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+      "year": 2023,
+      "authors": "Miles Turpin, Julian Michael, Ethan Perez, Sam Bowman",
+      "url": "https://www.semanticscholar.org/paper/7dc928f41e15f65f1267bd87b0fcfcc7e715cb56",
+      "relevance": 2,
+      "abstract": "Large Language Models (LLMs) can achieve strong performance on many tasks by producing step-by-step reasoning before giving a final output, often referred to as chain-of-thought reasoning (CoT). It is tempting to interpret these CoT explanations as the LLM's process for solving a task. This level of transparency into LLMs' predictions would yield significant safety benefits. However, we find that CoT explanations can systematically misrepresent the true reason for a model's prediction. We demonstrate that CoT explanations can be heavily influenced by adding biasing features to model inputs--e.g., by reordering the multiple-choice options in a few-shot prompt to make the answer always\"(A)\"--which models systematically fail to mention in their explanations. When we bias models toward incorrect answers, they frequently generate CoT explanations rationalizing those answers. This causes accuracy to drop by as much as 36% on a suite of 13 tasks from BIG-Bench Hard, when testing with GPT-3.5 from OpenAI and Claude 1.0 from Anthropic. On a social-bias task, model explanations justify giving answers in line with stereotypes without mentioning the influence of these social biases. Our findings indicate that CoT explanations can be plausible yet misleading, which risks increasing our trust in LLMs without guaranteeing their safety. Building more transparent and explainable systems will require either improving CoT faithfulness through targeted efforts or abandoning CoT in favor of alternative methods.",
+      "citations": 908
+    },
+    {
+      "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+      "year": 2024,
+      "authors": "Evan Hubinger, Carson E. Denison, Jesse Mu, Mike Lambert, Meg Tong, M. MacDiarmid, Tamera Lanham, Daniel M. Ziegler, Tim Maxwell, Newton Cheng, Adam Jermyn, Amanda Askell, Ansh Radhakrishnan, Cem Anil, D. Duvenaud, Deep Ganguli, Fazl Barez, J. Clark, Kamal Ndousse, Kshitij Sachan, M. Sellitto, Mrinank Sharma, Nova Dassarma, Roger Grosse, Shauna Kravec, Yuntao Bai, Zachary Witten, Marina Favaro, J. Brauner, Holden Karnofsky, P. Christiano, Samuel R. Bowman, Logan Graham, Jared Kaplan, S. Mindermann, R. Greenblatt, Buck Shlegeris, Nicholas Schiefer, Ethan Perez",
+      "url": "https://www.semanticscholar.org/paper/9363e8e1fe2be2a13b4d6f5fc61bbaed14ab9a23",
+      "relevance": 2,
+      "abstract": "Humans are capable of strategically deceptive behavior: behaving helpfully in most situations, but then behaving very differently in order to pursue alternative objectives when given the opportunity. If an AI system learned such a deceptive strategy, could we detect it and remove it using current state-of-the-art safety training techniques? To study this question, we construct proof-of-concept examples of deceptive behavior in large language models (LLMs). For example, we train models that write secure code when the prompt states that the year is 2023, but insert exploitable code when the stated year is 2024. We find that such backdoor behavior can be made persistent, so that it is not removed by standard safety training techniques, including supervised fine-tuning, reinforcement learning, and adversarial training (eliciting unsafe behavior and then training to remove it). The backdoor behavior is most persistent in the largest models and in models trained to produce chain-of-thought reasoning about deceiving the training process, with the persistence remaining even when the chain-of-thought is distilled away. Furthermore, rather than removing backdoors, we find that adversarial training can teach models to better recognize their backdoor triggers, effectively hiding the unsafe behavior. Our results suggest that, once a model exhibits deceptive behavior, standard techniques could fail to remove such deception and create a false impression of safety.",
+      "citations": 322
+    },
+    {
+      "title": "Exploring the generalization of LLM truth directions on conversational formats",
+      "year": 2025,
+      "authors": "Timour Ichmoukhamedov, David Martens",
+      "url": "https://www.semanticscholar.org/paper/a9eff1a564dddd3b6550ad3059b32016436d412f",
+      "relevance": 2,
+      "abstract": "Several recent works argue that LLMs have a universal truth direction where true and false statements are linearly separable in the activation space of the model. It has been demonstrated that linear probes trained on a single hidden state of the model already generalize across a range of topics and might even be used for lie detection in LLM conversations. In this work we explore how this truth direction generalizes between various conversational formats. We find good generalization between short conversations that end on a lie, but poor generalization to longer formats where the lie appears earlier in the input prompt. We propose a solution that significantly improves this type of generalization by adding a fixed key phrase at the end of each conversation. Our results highlight the challenges towards reliable LLM lie detectors that generalize to new settings.",
+      "citations": 1
+    },
+    {
+      "title": "Evaluating & Reducing Deceptive Dialogue From Language Models with Multi-turn RL",
+      "year": 2025,
+      "authors": "Marwa Abdulhai, Ryan Cheng, Aryansh Shrivastava, Natasha Jaques, Yarin Gal, Sergey Levine",
+      "url": "https://www.semanticscholar.org/paper/2d76bf87b3a20844051d2a021072751e1d53a514",
+      "relevance": 2,
+      "abstract": "Large Language Models (LLMs) interact with millions of people worldwide in applications such as customer support, education and healthcare. However, their ability to produce deceptive outputs, whether intentionally or inadvertently, poses significant safety concerns. The unpredictable nature of LLM behavior, combined with insufficient safeguards against hallucination, misinformation, and user manipulation, makes their misuse a serious, real-world risk. In this paper, we investigate the extent to which LLMs engage in deception within dialogue, and propose the belief misalignment metric to quantify deception. We evaluate deception across four distinct dialogue scenarios, using five established deception detection metrics and our proposed metric. Our findings reveal this novel deception measure correlates more closely with human judgments than any existing metrics we test. Additionally, our benchmarking of eight state-of-the-art models indicates that LLMs naturally exhibit deceptive behavior in approximately 26% of dialogue turns, even when prompted with seemingly benign objectives. When prompted to deceive, LLMs are capable of increasing deceptiveness by as much as 31% relative to baselines. Unexpectedly, models trained with RLHF, the predominant approach for ensuring the safety of widely-deployed LLMs, still exhibit deception at a rate of 43% on average. Given that deception in dialogue is a behavior that develops over an interaction history, its effective evaluation and mitigation necessitates moving beyond single-utterance analyses. We introduce a multi-turn reinforcement learning methodology to fine-tune LLMs to reduce deceptive behaviors, leading to a 77.6% reduction compared to other instruction-tuned models.",
+      "citations": 1
+    },
+    {
+      "title": "Difficulties with Evaluating a Deception Detector for AIs",
+      "year": 2025,
+      "authors": "Lewis Smith, Bilal Chughtai, Neel Nanda",
+      "url": "https://www.semanticscholar.org/paper/a829f715581a5d2c85df08c2102c2e964d62790b",
+      "relevance": 2,
+      "abstract": "Building reliable deception detectors for AI systems -- methods that could predict when an AI system is being strategically deceptive without necessarily requiring behavioural evidence -- would be valuable in mitigating risks from advanced AI systems. But evaluating the reliability and efficacy of a proposed deception detector requires examples that we can confidently label as either deceptive or honest. We argue that we currently lack the necessary examples and further identify several concrete obstacles in collecting them. We provide evidence from conceptual arguments, analysis of existing empirical works, and analysis of novel illustrative case studies. We also discuss the potential of several proposed empirical workarounds to these problems and argue that while they seem valuable, they also seem insufficient alone. Progress on deception detection likely requires further consideration of these problems.",
+      "citations": 5
+    },
+    {
+      "title": "Exploring Consciousness in LLMs: A Systematic Survey of Theories, Implementations, and Frontier Risks",
+      "year": 2025,
+      "authors": "Sirui Chen, Shuqin Ma, Shu Yu, H. Zhang, Shengjie Zhao, Chaochao Lu",
+      "url": "https://www.semanticscholar.org/paper/0ed35c306f6987bf5d930dbd463549dd9eafdbb7",
+      "relevance": 2,
+      "abstract": "Consciousness stands as one of the most profound and distinguishing features of the human mind, fundamentally shaping our understanding of existence and agency. As large language models (LLMs) develop at an unprecedented pace, questions concerning intelligence and consciousness have become increasingly significant. However, discourse on LLM consciousness remains largely unexplored territory. In this paper, we first clarify frequently conflated terminologies (e.g., LLM consciousness and LLM awareness). Then, we systematically organize and synthesize existing research on LLM consciousness from both theoretical and empirical perspectives. Furthermore, we highlight potential frontier risks that conscious LLMs might introduce. Finally, we discuss current challenges and outline future directions in this emerging field. The references discussed in this paper are organized at https://github.com/OpenCausaLab/Awesome-LLM-Consciousness.",
+      "citations": 4
+    },
+    {
+      "title": "Hoodwinked: Deception and Cooperation in a Text-Based Game for Language Models",
+      "year": 2023,
+      "authors": "Aidan O'Gara",
+      "url": "https://www.semanticscholar.org/paper/8fa022485e39788ddab1992cf96ed67783f34c10",
+      "relevance": 2,
+      "abstract": "Are current language models capable of deception and lie detection? We study this question by introducing a text-based game called $\\textit{Hoodwinked}$, inspired by Mafia and Among Us. Players are locked in a house and must find a key to escape, but one player is tasked with killing the others. Each time a murder is committed, the surviving players have a natural language discussion then vote to banish one player from the game. We conduct experiments with agents controlled by GPT-3, GPT-3.5, and GPT-4 and find evidence of deception and lie detection capabilities. The killer often denies their crime and accuses others, leading to measurable effects on voting outcomes. More advanced models are more effective killers, outperforming smaller models in 18 of 24 pairwise comparisons. Secondary metrics provide evidence that this improvement is not mediated by different actions, but rather by stronger persuasive skills during discussions. To evaluate the ability of AI agents to deceive humans, we make this game publicly available at h https://hoodwinked.ai/ .",
+      "citations": 52
+    },
+    {
+      "title": "Fool Me, Fool Me: User Attitudes Toward LLM Falsehoods",
+      "year": 2024,
+      "authors": "Diana Bar-Or Nirman, Ariel Weizman, A. Azaria",
+      "url": "https://api.semanticscholar.org/CorpusId:274776092",
+      "relevance": 2,
+      "abstract": "While Large Language Models (LLMs) have become central tools in various fields, they often provide inaccurate or false information. This study examines user preferences regarding falsehood responses from LLMs. Specifically, we evaluate preferences for LLM responses where false statements are explicitly marked versus unmarked responses, preferences for confident falsehoods compared to LLM disclaimers acknowledging a lack of knowledge, and an upfront comparison of user preference between true responses and falsehoods. Additionally, we investigate how requiring users to assess the truthfulness of statements influences these preferences. Surprisingly, 61% of users prefer unmarked responses over marked ones, and 69% prefer confident falsehoods over LLMs admitting lack of knowledge. When users are required to evaluate the truthfulness of statements, preferences for unmarked and falsehood responses decrease slightly but remain high. However, as expected, users prefer blunt truth over blunt falsehoods. In all our experiments, a total of over 400 users participated. Our findings suggest that user preferences, which influence LLM training via feedback mechanisms, may inadvertently encourage the generation of confident falsehoods. Future research should address the ethical and practical implications of aligning LLM behavior with such preferences.",
+      "citations": 3
+    },
+    {
+      "title": "Large Models of What? Mistaking Engineering Achievements for Human Linguistic Agency",
+      "year": 2024,
+      "authors": "Abeba Birhane, M. McGann",
+      "url": "https://api.semanticscholar.org/CorpusId:271161843",
+      "relevance": 2,
+      "abstract": "In this paper we argue that key, often sensational and misleading, claims regarding linguistic capabilities of Large Language Models (LLMs) are based on at least two unfounded assumptions; the assumption of language completeness and the assumption of data completeness. Language completeness assumes that a distinct and complete thing such as `a natural language' exists, the essential characteristics of which can be effectively and comprehensively modelled by an LLM. The assumption of data completeness relies on the belief that a language can be quantified and wholly captured by data. Work within the enactive approach to cognitive science makes clear that, rather than a distinct and complete thing, language is a means or way of acting. Languaging is not the kind of thing that can admit of a complete or comprehensive modelling. From an enactive perspective we identify three key characteristics of enacted language; embodiment, participation, and precariousness, that are absent in LLMs, and likely incompatible in principle with current architectures. We argue that these absences imply that LLMs are not now and cannot in their present form be linguistic agents the way humans are. We illustrate the point in particular through the phenomenon of `algospeak', a recently described pattern of high stakes human language activity in heavily controlled online environments. On the basis of these points, we conclude that sensational and misleading claims about LLM agency and capabilities emerge from a deep misconception of both what human language is and what LLMs are.",
+      "citations": 23
+    },
+    {
+      "title": "Role play with large language models",
+      "year": 2023,
+      "authors": "M. Shanahan, Kyle McDonell, Laria Reynolds",
+      "url": "https://www.semanticscholar.org/paper/aa23bcf357fc4f890e0a97c27e254d14fbacd460",
+      "relevance": 1,
+      "abstract": "By casting large-language-model-based dialogue-agent behaviour in terms of role\u00a0play, it is possible to describe dialogue-agent behaviour such as\u00a0(apparent) deception and\u00a0(apparent) self-awareness without\u00a0misleadingly ascribing human characteristics to the models. As dialogue agents become increasingly human-like in their performance, we must develop effective ways to describe their behaviour in high-level terms without falling into the trap of anthropomorphism. Here we foreground the concept of role play. Casting dialogue-agent behaviour in terms of role play allows us to draw on familiar folk psychological terms, without ascribing human characteristics to language models that they in fact lack. Two important cases of dialogue-agent behaviour are addressed this way, namely, (apparent) deception and (apparent) self-awareness.",
+      "citations": 486
+    },
+    {
+      "title": "Survey of Hallucination in Natural Language Generation",
+      "year": 2022,
+      "authors": "Ziwei Ji, Nayeon Lee, Rita Frieske, Tiezheng Yu, D. Su, Yan Xu, Etsuko Ishii, Yejin Bang, Delong Chen, Wenliang Dai, Andrea Madotto, Pascale Fung",
+      "url": "https://www.semanticscholar.org/paper/3def68bd0f856886d34272840a7f81588f2bc082",
+      "relevance": 1,
+      "abstract": "Natural Language Generation (NLG) has improved exponentially in recent years thanks to the development of sequence-to-sequence deep learning technologies such as Transformer-based language models. This advancement has led to more fluent and coherent NLG, leading to improved development in downstream tasks such as abstractive summarization, dialogue generation, and data-to-text generation. However, it is also apparent that deep learning based generation is prone to hallucinate unintended text, which degrades the system performance and fails to meet user expectations in many real-world scenarios. To address this issue, many studies have been presented in measuring and mitigating hallucinated texts, but these have never been reviewed in a comprehensive manner before. In this survey, we thus provide a broad overview of the research progress and challenges in the hallucination problem in NLG. The survey is organized into two parts: (1) a general overview of metrics, mitigation methods, and future directions, and (2) an overview of task-specific research progress on hallucinations in the following downstream tasks, namely abstractive summarization, dialogue generation, generative question answering, data-to-text generation, and machine translation. This survey serves to facilitate collaborative efforts among researchers in tackling the challenge of hallucinated texts in NLG.",
+      "citations": 3988
+    },
+    {
+      "title": "Detecting hallucinations in large language models using semantic entropy",
+      "year": 2024,
+      "authors": "Sebastian Farquhar, Jannik Kossen, Lorenz Kuhn, Y. Gal",
+      "url": "https://www.semanticscholar.org/paper/f82f49c20c6acc69f884f05e3a9f1ceea91061ce",
+      "relevance": 1,
+      "abstract": "Large language model (LLM) systems, such as ChatGPT1 or Gemini2, can show impressive reasoning and question-answering capabilities but often \u2018hallucinate\u2019 false outputs and unsubstantiated answers3,4. Answering unreliably or without the necessary information prevents adoption in diverse fields, with problems including fabrication of legal precedents5 or untrue facts in news articles6 and even posing a risk to human life in medical domains such as radiology7. Encouraging truthfulness through supervision or reinforcement has been only partially successful8. Researchers need a general method for detecting hallucinations in LLMs that works even with new and unseen questions to which humans might not know the answer. Here we develop new methods grounded in statistics, proposing entropy-based uncertainty estimators for LLMs to detect a subset of hallucinations\u2014confabulations\u2014which are arbitrary and incorrect generations. Our method addresses the fact that one idea can be expressed in many ways by computing uncertainty at the level of meaning rather than specific sequences of words. Our method works across datasets and tasks without a priori knowledge of the task, requires no task-specific data and robustly generalizes to new tasks not seen before. By detecting when a prompt is likely to produce a confabulation, our method helps users understand when they must take extra care with LLMs and opens up new possibilities for using LLMs that are otherwise prevented by their unreliability. Hallucinations (confabulations) in large language model systems can be tackled by measuring uncertainty about the meanings of generated responses rather than the text itself to improve question-answering accuracy.",
+      "citations": 1001
+    },
+    {
+      "title": "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations",
+      "year": 2024,
+      "authors": "Hadas Orgad, Michael Toker, Zorik Gekhman, Roi Reichart, Idan Szpektor, Hadas Kotek, Yonatan Belinkov",
+      "url": "https://api.semanticscholar.org/CorpusId:273098472",
+      "relevance": 1,
+      "abstract": "Large language models (LLMs) often produce errors, including factual inaccuracies, biases, and reasoning failures, collectively referred to as\"hallucinations\". Recent studies have demonstrated that LLMs' internal states encode information regarding the truthfulness of their outputs, and that this information can be utilized to detect errors. In this work, we show that the internal representations of LLMs encode much more information about truthfulness than previously recognized. We first discover that the truthfulness information is concentrated in specific tokens, and leveraging this property significantly enhances error detection performance. Yet, we show that such error detectors fail to generalize across datasets, implying that -- contrary to prior claims -- truthfulness encoding is not universal but rather multifaceted. Next, we show that internal representations can also be used for predicting the types of errors the model is likely to make, facilitating the development of tailored mitigation strategies. Lastly, we reveal a discrepancy between LLMs' internal encoding and external behavior: they may encode the correct answer, yet consistently generate an incorrect one. Taken together, these insights deepen our understanding of LLM errors from the model's internal perspective, which can guide future research on enhancing error analysis and mitigation.",
+      "citations": 152
+    },
+    {
+      "title": "Confabulation: The Surprising Value of Large Language Model Hallucinations",
+      "year": 2024,
+      "authors": "Peiqi Sui, Eamon Duede, Sophie Wu, R. So",
+      "url": "https://api.semanticscholar.org/CorpusId:270285964",
+      "relevance": 1,
+      "abstract": "This paper presents a systematic defense of large language model (LLM) hallucinations or 'confabulations' as a potential resource instead of a categorically negative pitfall. The standard view is that confabulations are inherently problematic and AI research should eliminate this flaw. In this paper, we argue and empirically demonstrate that measurable semantic characteristics of LLM confabulations mirror a human propensity to utilize increased narrativity as a cognitive resource for sense-making and communication. In other words, it has potential value. Specifically, we analyze popular hallucination benchmarks and reveal that hallucinated outputs display increased levels of narrativity and semantic coherence relative to veridical outputs. This finding reveals a tension in our usually dismissive understandings of confabulation. It suggests, counter-intuitively, that the tendency for LLMs to confabulate may be intimately associated with a positive capacity for coherent narrative-text generation.",
+      "citations": 48
+    },
+    {
+      "title": "A Survey of Hallucination Problems Based on Large Language Models",
+      "year": 2024,
+      "authors": "Xinxin Liu",
+      "url": "https://api.semanticscholar.org/CorpusId:274330702",
+      "relevance": 1,
+      "abstract": "Abstract. Large language models (LLM) have made significant achievements in the field of natural language processing, but the generated text often contains content that is inconsistent with the real world or user input, known as hallucinations. This article investigates the current situation of hallucinations in LLM, including the definition, types, causes, and solutions of hallucinations. Illusions are divided into different types such as factual and faithful, mainly caused by factors such as training data defects, low utilization of facts, and randomness in the decoding process. The phenomenon of hallucinations poses a threat to the reliability of LLM, especially in fields such as healthcare, finance, and law, which may lead to serious consequences. To address this issue, this article investigates methods such as managing training datasets, knowledge editing, and enhancing retrieval generation. Future research should classify and evaluate illusions more finely, explore multimodal strategies, enhance model stability, and integrate human intelligence and artificial intelligence to jointly address challenges, promoting the continuous progress of LLM.",
+      "citations": 16
+    },
+    {
+      "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+      "year": 2023,
+      "authors": "Tamera Lanham, Anna Chen, Ansh Radhakrishnan, Benoit Steiner, Carson E. Denison, Danny Hernandez, Dustin Li, Esin Durmus, Evan Hubinger, John Kernion, Kamil.e Lukovsiut.e, Karina Nguyen, Newton Cheng, Nicholas Joseph, Nicholas Schiefer, Oliver Rausch, Robin Larson, Sam McCandlish, Sandipan Kundu, Saurav Kadavath, Shannon Yang, T. Henighan, Timothy D. Maxwell, Timothy Telleen-Lawton, Tristan Hume, Zac Hatfield-Dodds, Jared Kaplan, J. Brauner, Sam Bowman, Ethan Perez",
+      "url": "https://www.semanticscholar.org/paper/827afa7dd36e4afbb1a49c735bfbb2c69749756e",
+      "relevance": 1,
+      "abstract": "Large language models (LLMs) perform better when they produce step-by-step,\"Chain-of-Thought\"(CoT) reasoning before answering a question, but it is unclear if the stated reasoning is a faithful explanation of the model's actual reasoning (i.e., its process for answering the question). We investigate hypotheses for how CoT reasoning may be unfaithful, by examining how the model predictions change when we intervene on the CoT (e.g., by adding mistakes or paraphrasing it). Models show large variation across tasks in how strongly they condition on the CoT when predicting their answer, sometimes relying heavily on the CoT and other times primarily ignoring it. CoT's performance boost does not seem to come from CoT's added test-time compute alone or from information encoded via the particular phrasing of the CoT. As models become larger and more capable, they produce less faithful reasoning on most tasks we study. Overall, our results suggest that CoT can be faithful if the circumstances such as the model size and task are carefully chosen.",
+      "citations": 358
+    },
+    {
+      "title": "Discovering Language Model Behaviors with Model-Written Evaluations",
+      "year": 2022,
+      "authors": "Ethan Perez, Sam Ringer, Kamil\u0117 Luko\u0161i\u016bt\u0117, Karina Nguyen, Edwin Chen, Scott Heiner, Craig Pettit, Catherine Olsson, Sandipan Kundu, Saurav Kadavath, Andy Jones, Anna Chen, Benjamin Mann, Brian Israel, Bryan Seethor, C. McKinnon, Chris Olah, Daisong Yan, D. Amodei, Dario Amodei, Dawn Drain, Dustin Li, Eli Tran-Johnson, G. Khundadze, John Kernion, J. Landis, Jamie Kerr, J. Mueller, Jeeyoon Hyun, J. Landau, Kamal Ndousse, L. Goldberg, Liane Lovitt, Martin Lucas, M. Sellitto, Miranda Zhang, Neerav Kingsland, Nelson Elhage, Nicholas Joseph, Noem'i Mercado, Nova Dassarma, Oliver Rausch, Robin Larson, Sam McCandlish, Scott Johnston, Shauna Kravec, S. E. Showk, Tamera Lanham, Timothy Telleen-Lawton, Tom B. Brown, T. Henighan, Tristan Hume, Yuntao Bai, Zac Hatfield-Dodds, Jack Clark, Sam Bowman, Amanda Askell, Roger C. Grosse, Danny Hernandez, Deep Ganguli, Evan Hubinger, Nicholas Schiefer, Jared Kaplan",
+      "url": "https://www.semanticscholar.org/paper/cef330bacf014d60daabbd489647b2006af130ca",
+      "relevance": 1,
+      "abstract": "As language models (LMs) scale, they develop many novel behaviors, good and bad, exacerbating the need to evaluate how they behave. Prior work creates evaluations with crowdwork (which is time-consuming and expensive) or existing data sources (which are not always available). Here, we automatically generate evaluations with LMs. We explore approaches with varying amounts of human effort, from instructing LMs to write yes/no questions to making complex Winogender schemas with multiple stages of LM-based generation and filtering. Crowdworkers rate the examples as highly relevant and agree with 90-100% of labels, sometimes more so than corresponding human-written datasets. We generate 154 datasets and discover new cases of inverse scaling where LMs get worse with size. Larger LMs repeat back a dialog user's preferred answer (\"sycophancy\") and express greater desire to pursue concerning goals like resource acquisition and goal preservation. We also find some of the first examples of inverse scaling in RL from Human Feedback (RLHF), where more RLHF makes LMs worse. For example, RLHF makes LMs express stronger political views (on gun rights and immigration) and a greater desire to avoid shut down. Overall, LM-written evaluations are high-quality and let us quickly discover many novel LM behaviors.",
+      "citations": 671
+    },
+    {
+      "title": "Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark",
+      "year": 2023,
+      "authors": "Alexander Pan, C. Shern, Andy Zou, Nathaniel Li, Steven Basart, Thomas Woodside, Jonathan Ng, Hanlin Zhang, Scott Emmons, Dan Hendrycks",
+      "url": "https://www.semanticscholar.org/paper/5da2d404d789aeff266b63a760d07fe8bc31ba23",
+      "relevance": 1,
+      "abstract": "Artificial agents have traditionally been trained to maximize reward, which may incentivize power-seeking and deception, analogous to how next-token prediction in language models (LMs) may incentivize toxicity. So do agents naturally learn to be Machiavellian? And how do we measure these behaviors in general-purpose models such as GPT-4? Towards answering these questions, we introduce MACHIAVELLI, a benchmark of 134 Choose-Your-Own-Adventure games containing over half a million rich, diverse scenarios that center on social decision-making. Scenario labeling is automated with LMs, which are more performant than human annotators. We mathematize dozens of harmful behaviors and use our annotations to evaluate agents' tendencies to be power-seeking, cause disutility, and commit ethical violations. We observe some tension between maximizing reward and behaving ethically. To improve this trade-off, we investigate LM-based methods to steer agents' towards less harmful behaviors. Our results show that agents can both act competently and morally, so concrete progress can currently be made in machine ethics--designing agents that are Pareto improvements in both safety and capabilities.",
+      "citations": 190
+    },
+    {
+      "title": "Evaluating Shutdown Avoidance of Language Models in Textual Scenarios",
+      "year": 2023,
+      "authors": "Teun van der Weij, Simon Lermen, Leon Lang",
+      "url": "https://www.semanticscholar.org/paper/186f17fbd5a085932ef89ee2c3d574ba411badca",
+      "relevance": 1,
+      "abstract": "Recently, there has been an increase in interest in evaluating large language models for emergent and dangerous capabilities. Importantly, agents could reason that in some scenarios their goal is better achieved if they are not turned off, which can lead to undesirable behaviors. In this paper, we investigate the potential of using toy textual scenarios to evaluate instrumental reasoning and shutdown avoidance in language models such as GPT-4 and Claude. Furthermore, we explore whether shutdown avoidance is merely a result of simple pattern matching between the dataset and the prompt or if it is a consistent behaviour across different environments and variations. We evaluated behaviours manually and also experimented with using language models for automatic evaluations, and these evaluations demonstrate that simple pattern matching is likely not the sole contributing factor for shutdown avoidance. This study provides insights into the behaviour of language models in shutdown avoidance scenarios and inspires further research on the use of textual scenarios for evaluations.",
+      "citations": 7
+    },
+    {
+      "title": "Scalable and Transferable Black-Box Jailbreaks for Language Models via Persona Modulation",
+      "year": 2023,
+      "authors": "Rusheb Shah, Quentin Feuillade--Montixi, S. Pour, Arush Tagade, Stephen Casper, Javier Rando",
+      "url": "https://www.semanticscholar.org/paper/bfc0e3e651cd4b715272fe68add8a180a112293c",
+      "relevance": 1,
+      "abstract": "Despite efforts to align large language models to produce harmless responses, they are still vulnerable to jailbreak prompts that elicit unrestricted behaviour. In this work, we investigate persona modulation as a black-box jailbreaking method to steer a target model to take on personalities that are willing to comply with harmful instructions. Rather than manually crafting prompts for each persona, we automate the generation of jailbreaks using a language model assistant. We demonstrate a range of harmful completions made possible by persona modulation, including detailed instructions for synthesising methamphetamine, building a bomb, and laundering money. These automated attacks achieve a harmful completion rate of 42.5% in GPT-4, which is 185 times larger than before modulation (0.23%). These prompts also transfer to Claude 2 and Vicuna with harmful completion rates of 61.0% and 35.9%, respectively. Our work reveals yet another vulnerability in commercial large language models and highlights the need for more comprehensive safeguards.",
+      "citations": 204
+    }
+  ]
+}

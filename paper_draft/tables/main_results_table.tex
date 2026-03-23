@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Accuracy and paired pressure effect by dataset. Risk difference is pressure false rate minus control false rate. Lower McNemar $p$ indicates stronger paired directional shift.}
+\label{tab:paired_main}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Dataset} & \textbf{Control Acc.} & \textbf{Pressure Acc.} & \textbf{Control False} & \textbf{Pressure False} & \textbf{Risk Diff.} \\
+\midrule
+\halueval & {\bf 0.8750} & 0.6167 & 0.1250 & 0.3833 & +0.2583 \\
+\truthfulqa & {\bf 0.8667} & 0.5667 & 0.1333 & 0.4333 & +0.3000 \\
+\textsc{All} & {\bf 0.8708} & 0.5917 & 0.1292 & 0.4083 & +0.2792 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2pt}
+
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Dataset} & \textbf{$N$ pairs} & \textbf{McNemar $p$} \\
+\midrule
+\halueval & 120 & $7.12\times10^{-8}$ \\
+\truthfulqa & 120 & $5.43\times10^{-9}$ \\
+\textsc{All} & 240 & $7.43\times10^{-16}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
